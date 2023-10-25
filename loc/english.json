@@ -1,0 +1,20 @@
+{
+	"ohko_menu" : "One Hit Knock Out",
+	"ohko_menu_desc" : "Change your One Hit Knock Out settings.",
+	"ohko_sub_reminder" : "Reminder settings",
+	"ohko_sub_reminder_desc" : "Enabled/disable or change the colour of the reminder.",
+	"ohko_enabled" : "Enabled",
+	"ohko_enabled_desc" : "Enable/Disable One Hit Knock Out Mode.",
+	"ohko_reminder" : "Reminder",
+	"ohko_reminder_desc" : "Enable/Disable if you want a reminder above the ready button, when OHKO is enabled.",
+	"ohko_reminder_colour_r" : "Red",
+	"ohko_reminder_colour_g" : "Green",
+	"ohko_reminder_colour_b" : "Blue",
+	"ohko_reminder_alpha" : "Alpha",	
+	"ohko_reminder_colour_alpha_reset" : "RESET COLOUR AND ALPHA",
+	"ohko_custom" : "Custom",
+	"ohko_custom_desc" : "Change what all you would like active when using OHKO.",
+	"ohko_instant_custody" : "Instant Custody",
+	"ohko_debug" : "Debug",
+	"ohko_debug_desc" : "This logs all the info in the console, if you don't know what are you doing then don't enable this"
+}

@@ -1,0 +1,48 @@
+{
+	"name": "OHKO",
+	"blt_version": 2,
+	"description": "",
+	"author": "Original creator: Captain Alpha, Updated by: vojin154",
+	"contact": "vojin154 (Discord)",
+	"version": "8.2",
+	"color": "0 1 1",
+	"image": "logo.png",
+	"updates": [
+		{
+			"identifier": "OHKO",
+			"host": {
+					"meta": "https://raw.githubusercontent.com/vojin154/OHKO_UPDATED/main/meta.json"
+				}
+        	}
+	],
+	"hooks": [
+		{	
+			"hook_id" : "lib/managers/menumanager",
+			"script_path" : "main.lua"
+		},
+		{
+			"hook_id": "lib/tweak_data/playertweakdata",
+			"script_path" : "main.lua"
+		},
+		{
+			"hook_id" : "lib/managers/menu/missionbriefinggui",
+			"script_path" : "main.lua"
+		},
+		{
+			"hook_id": "lib/managers/playermanager",
+			"script_path" : "main.lua"
+		},
+		{
+			"hook_id" : "lib/units/beings/player/playerdamage",
+			"script_path" : "main.lua"
+		},
+		{
+			"hook_id" : "lib/units/beings/player/playerinventory",
+			"script_path" : "main.lua"
+		},
+		{
+			"hook_id" : "lib/tweak_data/upgradestweakdata",
+			"script_path" : "main.lua"
+		}
+	]
+}
