@@ -11,8 +11,8 @@ function OhkoMenuSettings:CreateReadyText()
 		layer = tweak_data.gui.MENU_LAYER + 1,
         text = "One Hit Knock Out ENABLED",
         font = tweak_data.menu.pd2_large_font,
-        color = Color(OhkoMenuSettings.settings.reminder_r_value, OhkoMenuSettings.settings.reminder_g_value, OhkoMenuSettings.settings.reminder_b_value),
-		alpha = OhkoMenuSettings.settings.alpha_value,
+        color = Color(self.settings.reminder_r_value, self.settings.reminder_g_value, self.settings.reminder_b_value),
+		alpha = self.settings.alpha_value,
         font_size = 27,
 		blend_mode = "normal"
     })
@@ -42,14 +42,6 @@ Hooks:Add("MenuManagerBuildCustomMenus", "MenuManagerBuildCustomMenusOHKO", func
 
     MenuCallbackHandler.callback_ohko_toggle = function(self, item)
         OhkoMenuSettings.settings.enabled = (item:value() == "on" and true or false)
-
-        if item:value() == "on" and true then
-
-        else
-            if  not (Utils:IsInGameState() or Utils:IsInHeist()) then
-                --OhkoMenuSettings:SetUpOriginal()
-            end
-        end
         if alive(OhkoMenuSettings.menu_text) then
             OhkoMenuSettings.menu_text:set_visible(OhkoMenuSettings.settings.enabled and OhkoMenuSettings.settings.reminder)
         end
