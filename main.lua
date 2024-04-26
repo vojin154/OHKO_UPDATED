@@ -38,8 +38,10 @@ if not OhkoMenuSettings then
 		local settings = OhkoMenuSettings.settings
 		if name == false then
 			name = true
-		elseif settings[hook_setting] then
+		elseif settings[hook_setting] and settings[hook_setting] == true then
 			name = true
+		else
+			name = false
 		end
 		return name
 	end
@@ -65,11 +67,12 @@ if not OhkoMenuSettings then
 			return
 		end
 
+		local original = Hooks:GetFunction(class, "func_name")
 		Hooks:OverrideFunction(class, func_name, function(...)
 			if get_setting("enabled") and get_setting(hook_setting) then
 				return override(...)
 			else
-				return original(...)
+				return original and original(...) or error("[OHKO] [ERROR] ORIGINAL FUNCTION IS INVALID!! " .. func_name)
 			end
 		end)
 

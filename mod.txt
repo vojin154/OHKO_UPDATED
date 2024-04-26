@@ -4,7 +4,7 @@
 	"description": "",
 	"author": "Original creator: Captain Alpha, Updated by: vojin154",
 	"contact": "vojin154 (Discord)",
-	"version": "8.4",
+	"version": "8.5",
 	"color": "0 1 1",
 	"image": "logo.png",
 	"updates": [
